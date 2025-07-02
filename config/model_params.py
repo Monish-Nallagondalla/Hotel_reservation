@@ -7,7 +7,7 @@ LIGHTGM_PARAMS={
     'num_leaves': randint(20,100),
     'boosting_type' : ['gbdt' , 'dart' , 'goss']
 }
-
+              
 
 RANDOM_SEARCH_PARAMS = {
     'n_iter' : 2,

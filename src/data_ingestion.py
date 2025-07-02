@@ -12,27 +12,27 @@ logger = get_logger(__name__)
 class DataIngestion:
     def __init__(self,config):
         self.config = config["data_ingestion"]
-        self.bucket_name = self.config["bucket_name"]
-        self.file_name = self.config["bucket_file_name"]
+        # self.bucket_name = self.config["bucket_name"]
+        # self.file_name = self.config["bucket_file_name"]
         self.train_test_ratio = self.config["train_ratio"]
 
         os.makedirs(RAW_DIR , exist_ok=True)
 
-        logger.info(f"Data Ingestion started with {self.bucket_name} and file is  {self.file_name}")
+       # logger.info(f"Data Ingestion started with {self.bucket_name} and file is  {self.file_name}")
 
-    def download_csv_from_gcp(self):
-        try:
-            client = storage.Client()
-            bucket = client.bucket(self.bucket_name)
-            blob = bucket.blob(self.file_name)
+    # def download_csv_from_gcp(self):
+    #     try:
+    #         client = storage.Client()
+    #         bucket = client.bucket(self.bucket_name)
+    #         blob = bucket.blob(self.file_name)
 
-            blob.download_to_filename(RAW_FILE_PATH)
+    #         blob.download_to_filename(RAW_FILE_PATH)
 
-            logger.info(f"CSV file is sucesfully downloaded to {RAW_FILE_PATH}")
+    #         logger.info(f"CSV file is sucesfully downloaded to {RAW_FILE_PATH}")
 
-        except Exception as e:
-            logger.error("Error while downloading the csv file")
-            raise CustomException("Failed to downlaod csv file ", e)
+    #     except Exception as e:
+    #         logger.error("Error while downloading the csv file")
+    #         raise CustomException("Failed to downlaod csv file ", e)
         
     def split_data(self):
         try:
@@ -55,7 +55,7 @@ class DataIngestion:
         try:
             logger.info("Starting data ingestion process")
 
-            self.download_csv_from_gcp()
+            #self.download_csv_from_gcp()
             self.split_data()
 
             logger.info("Data ingestion completed sucesfully")
