@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/MONISH/OneDrive/Documents/Data_science%202024/MLOPS_projects/Projects/Hotel_reservation/mlruns/0/1f014ba42b9b45d9a42856ee74924b79/artifacts
+end_time: 1751497531403
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1f014ba42b9b45d9a42856ee74924b79
+run_name: big-chimp-499
+run_uuid: 1f014ba42b9b45d9a42856ee74924b79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751497523825
+status: 3
+tags: []
+user_id: MONISH

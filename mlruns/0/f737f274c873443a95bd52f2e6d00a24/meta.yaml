@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/MONISH/OneDrive/Documents/Data_science%202024/MLOPS_projects/Projects/Hotel_reservation/mlruns/0/f737f274c873443a95bd52f2e6d00a24/artifacts
+end_time: 1751496576409
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f737f274c873443a95bd52f2e6d00a24
+run_name: kindly-sheep-86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751496576110
+status: 4
+tags: []
+user_id: MONISH
